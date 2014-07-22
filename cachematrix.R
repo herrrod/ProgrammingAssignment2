@@ -5,7 +5,6 @@
 ## of its inverse.
 ## Args:
 ##    x: a matrix
-## 
 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
@@ -26,6 +25,8 @@ makeCacheMatrix <- function(x = matrix()) {
 ## The first time this function is called the inverse is calculated and cached. 
 ## Subsequent calls to this function with the same matrix will return the cached
 ## inverse.
+## Args:
+##    x: a matrix created by function makeCacheMatrix
 
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
